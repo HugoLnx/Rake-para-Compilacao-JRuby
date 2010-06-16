@@ -12,8 +12,8 @@ Bem, eu suponho que existam muitas maneiras de fazer isso, mas nenhuma se tornou
 
 Apos isso, eu decidi utilizar a seguinte estrutura...
 
-app/lib/lib # scripts ruby (.rb)
-app/lib/bin # compilacoes (.class)
+<pre>app/lib/lib # scripts ruby (.rb)
+app/lib/bin # compilacoes (.class)</pre>
 
 O rake e baseado nessa estrutura, ele replica a estrutura de pastas de app/lib/lib em app/lib/bin e depois compila os .rbs de dentro de app/lib/lib para app/lib/bin.
 Obs.: Se tiver algum arquivo .rb dentro de app/lib ele eh compilado dentro do proprio diretorio app/lib
