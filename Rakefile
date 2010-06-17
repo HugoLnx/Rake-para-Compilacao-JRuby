@@ -28,10 +28,10 @@ task :compilar do
 	threads = []
 	dir = File.join aqui, "lib/#{DIR_RB}"
 	scripts_na_lib_lib.each do |script|
-			sh "jruby -S jrubyc #{script} -d #{dir} -t lib/#{DIR_CLASS}/"
+			sh "jruby -S jrubyc \"#{script}\" -d \"#{dir}\" -t \"lib/#{DIR_CLASS}/\""
 	end
 	
 	scripts_na_lib.each do |script|
-		sh "jruby -S jrubyc #{script}"
+		sh "jruby -S jrubyc \"#{script}\""
 	end
 end
